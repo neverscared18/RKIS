@@ -1,13 +1,18 @@
-﻿namespace D
+﻿using System;
+
+namespace C
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            double amount = 1.11; //количество биткоинов от одного человека
-            int peopleCount = 60; // количество человек
-            int totalMoney = (int)amount * peopleCount; // ← исправьте ошибку в этой строке
-            Console.WriteLine(totalMoney);
+            double pi = Math.PI;
+            long tenThousand = 10000L;
+            double tenThousandPi = pi * tenThousand;
+            int roundedTenThousandPi = (int)Math.Round(tenThousandPi);
+            int integerPartOfTenThousandPi = (int)tenThousandPi;
+            Console.WriteLine(integerPartOfTenThousandPi);
+            Console.WriteLine(roundedTenThousandPi);
         }
     }
 }
